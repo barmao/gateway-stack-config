@@ -3,4 +3,4 @@ platform:
   name: edge-stack
   managed-by: config-server
   # Bump this and POST /actuator/busrefresh to see hot-refresh propagate.
-  config-version: "4"
+  config-version: "1"
