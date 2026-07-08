@@ -1,6 +1,7 @@
-# Applied to ALL services (non-secret defaults only).
+# Applied to ALL services, ALL environments (env-specific values live in
+# application-<env>.yml, which the Config Server layers on top per profile).
 platform:
   name: edge-stack
   managed-by: config-server
-  # Bump this and POST /actuator/busrefresh to see hot-refresh propagate.
-  config-version: "1"
+  env: unknown
+  config-version: "0"

@@ -1,0 +1,3 @@
+platform:
+  env: prod
+  config-version: "1-prod"
