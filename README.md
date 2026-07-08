@@ -1,10 +1,15 @@
-# gateway-stack-config
+# gateway-stack-config — ARCHIVED
 
-Externalized **non-secret** configuration served by the Spring Cloud Config
-Server. Public on purpose — it contains configuration only.
+> ⚠️ **No longer used.** The Config Server switched from a Git backend to a
+> **JDBC/Postgres backend**. Configuration now lives in the `PROPERTIES` table in
+> `configdb`, seeded from `infra/postgres/config/config-properties.sql` in the
+> main `gateway-stack` repo.
+>
+> To change config: edit that SQL file and run
+> `infra/postgres/setup-configdb.sh` (config-as-code). This repo is kept for
+> historical reference only.
 
-**Never put secrets here.** DB passwords, tokens, keys live in Vault; the Config
-Server merges them in (composite backend).
+---
 
-- `application.yml` — defaults applied to every service
-- `<service>.yml` — per-service config (e.g. `orders-api.yml`)
+Previously: externalized non-secret config served by Spring Cloud Config Server
+via its Git backend (`application-<env>.yml`, `<service>.yml`).
