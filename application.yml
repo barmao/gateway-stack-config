@@ -1,0 +1,4 @@
+# Applied to ALL services (non-secret defaults only).
+platform:
+  name: edge-stack
+  managed-by: config-server

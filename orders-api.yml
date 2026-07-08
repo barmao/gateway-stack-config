@@ -1,0 +1,5 @@
+# orders-api non-secret config. Proves config comes from the Config Server:
+# orders-api exposes this at GET /api/orders/config.
+orders:
+  greeting: "orders-api config is served by Spring Cloud Config Server"
+  page-size: 25
