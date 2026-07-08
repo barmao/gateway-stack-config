@@ -1,0 +1,3 @@
+# sample-api non-secret config (served by the Config Server; refreshable via bus).
+sample:
+  message: "sample-api says hello — this text comes from the Config Server"
